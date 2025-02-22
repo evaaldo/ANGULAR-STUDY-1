@@ -14,5 +14,8 @@ import { DUMMY_USERS } from './dummy-users';
 })
 export class AppComponent {
   users = DUMMY_USERS;
-  title = 'EasyTask';
+
+  onSelectUser(id: string) {
+    console.log("Selected user with id: " + id);
+  }
 }
